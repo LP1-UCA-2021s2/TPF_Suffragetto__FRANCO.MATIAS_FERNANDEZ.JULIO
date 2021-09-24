@@ -1,0 +1,57 @@
+
+
+#ifndef ESENCIAL_SUFFRAG_H_
+#define ESENCIAL_SUFFRAG_H_
+
+
+
+
+
+
+
+/*Una matriz de enteros para representar el tablero de juego.
+ * Se utiliza en conjunto con el array fichar(ver mas abajo) para imprimir el tablero.
+ * La idea principal es crear un relacion de correspondencia entre los numeros enteros
+ * de la matriz y las fichas en el tablero. */
+
+int tablero[17][17] = {
+	8,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,
+	8,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,
+	8,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,
+	8,8,0,0,0,0,4,6,6,6,4,0,0,0,0,0,7,
+	8,0,0,0,3,4,4,6,6,6,4,4,3,0,0,0,7,
+	8,0,3,4,4,4,4,4,3,4,4,4,4,4,3,0,7,
+	8,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,7,
+	8,0,0,0,0,0,0,1,0,3,0,0,0,0,0,0,7,
+	8,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,7,
+	8,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,7,
+	8,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,7,
+	8,0,1,2,2,2,2,2,3,2,2,2,2,2,1,0,7,
+	8,0,0,0,1,2,2,5,5,5,2,2,1,0,0,0,7,
+	8,0,0,0,0,0,2,5,5,5,2,0,0,0,0,7,7,
+	8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,7,
+	8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,7,
+	8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,7
+
+};
+
+
+
+/*los indices del array estan relacionados con los numeros en la matriz
+ * char[i] representa a i en la impresion del tablero
+ * char[0] espacio vacio
+ * char[1] 1 ==> Inspector "I"
+ * char[2] 2 ==> policia "p"
+ * char[3] 3 ==> Lider suffragette "L"
+ * char[4] 4 ==> suffragette "s"
+ * char[5] 5 ==> base policias "+"
+ * char[6] 6 ==> base suffragetto "*"
+ *
+ * */
+char ficha[10]= {' ','I','p','L','s','X','@','▒','H'};
+
+
+
+
+
+#endif

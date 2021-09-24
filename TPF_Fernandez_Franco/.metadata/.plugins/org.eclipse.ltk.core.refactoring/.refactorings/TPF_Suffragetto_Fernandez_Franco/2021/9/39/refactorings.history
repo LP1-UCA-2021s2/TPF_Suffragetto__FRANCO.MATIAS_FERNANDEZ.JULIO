@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;TPF_Suffragetto_Fernandez_Franco/src/TPF_Suffragetto_Fernandez_Franco.c&apos; to &apos;Main_Suffragetto.c&apos;" description="Rename resource &apos;TPF_Suffragetto_Fernandez_Franco.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/TPF_Suffragetto_Fernandez_Franco.c" name="Main_Suffragetto.c" stamp="1632403745352" updateReferences="true"/>
+</session>

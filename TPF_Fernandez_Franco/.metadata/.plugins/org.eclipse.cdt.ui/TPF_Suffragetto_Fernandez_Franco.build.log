@@ -1,0 +1,6 @@
+19:36:54 **** Incremental Build of configuration Debug for project TPF_Suffragetto_Fernandez_Franco ****
+make all 
+make: No se hace nada para 'all'.
+
+19:36:58 Build Finished. 0 errors, 0 warnings. (took 3s.386ms)
+

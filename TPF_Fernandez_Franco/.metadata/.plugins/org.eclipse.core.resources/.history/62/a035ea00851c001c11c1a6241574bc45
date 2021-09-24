@@ -1,0 +1,55 @@
+/*
+ ============================================================================
+ Name        : TPF_Suffragetto_Fernandez_Franco.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+
+
+
+#include "Funciones_Suffrag.h"
+//#include "Esencial_Suffrag.h"
+
+
+
+
+
+int main(void){
+
+	int num1=0, num2=0;
+
+	srand(time(NULL));
+
+	do{
+		mensaje_de_bienvenida();
+		instrucciones();
+		reglas();
+
+		eleccion_bando(bandos);
+		turno = seleccionar_jugador1(turno);
+
+		mostrar_turno(turno);
+		imprimir_tablero();
+		Jugar(turno, bandos[turno-1]);
+		turno = rotar_jugador(turno);
+
+		verificar_conquista(&num1,&num2);
+
+
+	}while(num1<6 && num2<6 && array[0]>5 && array[1]>5);
+
+
+	fin_del_juego(num1,num2);
+
+
+
+
+}
