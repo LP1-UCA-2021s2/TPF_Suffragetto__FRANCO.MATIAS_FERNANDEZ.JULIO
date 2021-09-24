@@ -58,7 +58,7 @@ int main(void){
 		rev_carcel_hosp(&num3,&num4);
 
 
-	}while(num1<6 && num2<6 && num3>=16 && num4>=16);
+	}while(num1<6 && num2<6 && num3<16 && num4<16);
 	/*Si se sale del ciclo do while, quiere decir que alguna de las condiciones de victoria ha sido alcanzada*/
 
 
